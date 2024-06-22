@@ -1,9 +1,9 @@
-function fetchGitaVerse() {
+async function fetchGitaVerse() {
   const chapter = document.getElementById("chapter").value;
   const verse = document.getElementById("verse").value;
   const url = `https://bhagavadgitaapi.in/slok/${chapter}/${verse}`;
 
-  fetch(url)
+  await fetch(url)
     .then((response) => response.json())
     .then((data) => {
       document.getElementById("sanskrit").innerHTML = data.slok;
