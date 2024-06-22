@@ -8,6 +8,7 @@
 
 **I am a developer. I don't have any intention to discriminate any other dharmas. As a Hindu guy I have built this project just to show my tribute. I am neither associated nor representing any community. I am a developer for all.**
 
+
 ## :gear: Tech Stack
 
 **_Webpage_**
@@ -32,9 +33,15 @@
 > &nbsp;
 
 **_Deployment_**
-> ![Netlify](https://skillicons.dev/icons?i=netlify)
+> [![Netlify](https://skillicons.dev/icons?i=netlify)](https://gita-at-screen.netlify.app/)
 > &nbsp;
-> ![Vercel](https://skillicons.dev/icons?i=vercel)
+> [![Vercel](https://skillicons.dev/icons?i=vercel)](https://gita-at-screen.vercel.app/)
 > &nbsp;
-> ![Cloud](https://skillicons.dev/icons?i=gcp)
+> [![Cloud](https://skillicons.dev/icons?i=github)](https://megh2005.github.io/Gita-at-Screen/)
 > &nbsp;
+
+## :link: Important Links
+- >**GitHub = https://github.com/Megh2005/Gita-at-Screen**
+- >**Vercel = https://gita-at-screen.vercel.app**
+- >**Netlify = https://gita-at-screen.netlify.app**
+- >**Youtube = https://youtu.be/Zc2Itxyl8BU**
