@@ -3,7 +3,9 @@ async function fetchGitaVerse() {
   const verse = document.getElementById("verse").value;
   const url = `https://bhagavadgitaapi.in/slok/${chapter}/${verse}`;
 
-  await fetch(url)
+  await fetch(url, {
+    referrerPolicy: "unsafe-url",
+  })
     .then((response) => response.json())
     .then((data) => {
       document.getElementById("sanskrit").innerHTML = data.slok;
