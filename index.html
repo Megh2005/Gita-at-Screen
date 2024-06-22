@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="bg.jpg" type="image/x-icon">
+    <title>Gita @ Screen</title>
+</head>
+
+<body>
+    <h1>Bhagwad Gita Slokas</h1>
+
+    <div class="input-container">
+        <label class="chapter" for="chapter">Chapter</label>
+        <input type="number" id="chapter" name="chapter" min="1" max="18" required />
+        <label class="chapter" for="verse">Sloka</label>
+        <input type="number" id="verse" name="verse" min="1" required />
+    </div>
+    <div>
+        <button type="submit" class="button-classy" onclick="fetchGitaVerse()">Read Sloka</button>
+        <button class="button-classy">
+            <a href="mailto:iammeghdeb@gmail.com" target="_blank">Contact Me</a>
+        </button>
+    </div>
+
+    <div class="content">
+        <div>
+            <h2 class="header">Sanskrit Translation</h2 class="header">
+            <div id="sanskrit"></div>
+        </div>
+        <div>
+            <h2 class="header">Sanskrit Description</h2 class="header">
+            <div id="scon"></div>
+        </div>
+        <div>
+            <h2 class="header">English Translation</h2 class="header">
+            <div id="english"></div>
+        </div>
+        <div>
+            <h2 class="header">English Description</h2 class="header">
+            <div id="econ"></div>
+        </div>
+        <div>
+            <h2 class="header">Hindi Translation</h2 class="header">
+            <div id="hindi"></div>
+        </div>
+        <div>
+            <h2 class="header">Hindi Description</h2 class="header">
+            <div id="hcon"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

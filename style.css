@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: yellow;
+}
+
+a:hover {
+  color: black;
+}
+
+body {
+  font-family: "Marcellus", serif;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  line-height: 1.6;
+  background: rgb(131, 58, 180);
+  background: -moz-linear-gradient(
+    133deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(43, 68, 154, 1) 50%,
+    rgba(166, 57, 134, 1) 77%,
+    rgba(195, 31, 29, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    133deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(43, 68, 154, 1) 50%,
+    rgba(166, 57, 134, 1) 77%,
+    rgba(195, 31, 29, 1) 100%
+  );
+  background: linear-gradient(
+    133deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(43, 68, 154, 1) 50%,
+    rgba(166, 57, 134, 1) 77%,
+    rgba(195, 31, 29, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#c31f1d",GradientType=1);
+}
+
+.chapter {
+  color: yellow;
+  font-weight: 900;
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: yellow;
+  text-decoration: underline;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+}
+
+label {
+  margin: 10px 5px;
+  font-size: 1.1em;
+  color: yellow;
+  margin-right: 20px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 2rem;
+  border: 1px solid #0056b3;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+  font-weight: 900;
+}
+
+.button-classy {
+  background-color: #000; /* Dark background */
+  color: yellow; /* White text */
+  padding: 5px 20px; /* Padding for the button */
+  font-size: 1rem; /* Font size */
+  font-weight: 800; /* Slightly bold */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 1px; /* Space between letters */
+  border: 2px solid #555; /* Slightly lighter border */
+  border-radius: 50px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition */
+  position: relative; /* Positioning for pseudo-elements */
+  overflow: hidden; /* Hide overflow */
+  z-index: 1; /* Ensure content is above pseudo-elements */
+  cursor: pointer;
+}
+
+.button-classy::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.3),
+    rgba(0, 0, 0, 0)
+  );
+  transition: all 0.5s ease;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: -1;
+}
+
+.button-classy:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.button-classy:hover {
+  color: #333; /* Dark text on hover */
+  background-color: #fff; /* White background on hover */
+  border-color: #333; /* Dark border on hover */
+}
+
+.button-classy:active {
+  transform: scale(0.98); /* Slightly smaller on click */
+}
+
+.button-classy:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); /* Custom focus outline */
+}
+
+div {
+  text-align: center;
+  margin: 20px;
+}
+
+h2 {
+  color: yellow;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+#sanskrit,
+#scon,
+#english,
+#econ,
+#hindi,
+#hcon {
+  padding: 10px;
+  border: 5px solid yellow;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  margin: 10px auto;
+  width: 80%;
+  max-width: 1000px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  font-weight: 900;
+  font-size: 20px;
+}
+
+#hcon,
+#hindi {
+  font-family: "Hind", sans-serif;
+  font-weight: 800;
+}
+
+#english,
+#econ {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 600px) {
+  .input-container {
+    flex-direction: row;
+    align-items: center; /* Center items horizontally */
+  }
+
+  input {
+    width: calc(50% - 20px); /* Adjusted width to leave space between inputs */
+    max-width: none; /* Reset max-width to allow wider input on larger screens */
+  }
+
+  .chapter {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    line-height: 1.8;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .button-classy {
+    font-size: 1.2rem;
+    padding: 20px 40px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  #sanskrit,
+  #scon,
+  #english,
+  #econ,
+  #hindi,
+  #hcon {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .button-classy {
+    font-size: 1.5rem;
+    padding: 25px 50px;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  #sanskrit,
+  #scon,
+  #english,
+  #econ,
+  #hindi,
+  #hcon {
+    width: 60%;
+  }
+}
